@@ -26,9 +26,9 @@ class App(ctk.CTk):
         super().__init__()  # Inicializa a janela principal do CustomTkinter
 
         # ---------- CONFIGURAÇÕES DA JANELA ----------
-        self.title("Cotações de Criptomoedas")  # Título da janela
+        self.title("Cotações de Criptomoedas")   # Título da janela
         self.geometry("500x400")                 # Tamanho inicial
-        self.configure(fg_color="#FFFFFF")       # Cor de fundo branca
+        self.configure(fg_color="#FFFFFF")     # Cor de fundo branca
         self.resizable(True, True)               # Permite redimensionar a janela
 
         # Define transparência da janela (caso o sistema suporte)
@@ -57,7 +57,7 @@ class App(ctk.CTk):
             text="Cotações ao Vivo (USD / BRL)",
             font=ctk.CTkFont(family="Consolas", size=20, weight="bold")
         )
-        self.title_label.pack(pady=14)
+        self.title_label.pack(pady=14) # cria 14 pixels de espaço acima e 14 abaixo da label
 
         # Frame que conterá a "tabela" com os dados
         self.table_frame = ctk.CTkFrame(self)
