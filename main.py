@@ -1,10 +1,10 @@
-import customtkinter as ctk       # Importa a biblioteca CustomTkinter (interface moderna baseada no Tkinter)
-from crypto_api import get_crypto_data   # Importa a função que faz a requisição à API CoinGecko
-from datetime import datetime      # Usada para exibir a hora da última atualização
+import customtkinter as ctk       # importa a biblioteca CustomTkinter (interface moderna baseada no Tkinter)
+from crypto_api import get_crypto_data   # importa a função que faz a requisição à API CoinGecko
+from datetime import datetime      # usada para exibir a hora da última atualização
 
 # ---------- CONFIGURAÇÃO GLOBAL DE APARÊNCIA ----------
-ctk.set_appearance_mode("light")    # Define o tema claro (pode ser 'dark', 'light' ou 'system')
-ctk.set_default_color_theme("blue") # Define o esquema de cores padrão (blue, dark-blue, etc.)
+ctk.set_appearance_mode("light")    # define o tema claro (pode ser 'dark', 'light' ou 'system')
+ctk.set_default_color_theme("blue") # define o esquema de cores padrão (blue, dark-blue, etc.)
 
 # ---------- MAPA DE NOMES PARA EXIBIÇÃO ----------
 ID_TO_TICKER = {
@@ -23,19 +23,19 @@ ORDER = ["ripple", "stellar", "hedera-hashgraph", "ondo-finance", "xdce-crowd-sa
 # =====================================================
 class App(ctk.CTk):
     def __init__(self):
-        super().__init__()  # Inicializa a janela principal do CustomTkinter
+        super().__init__()  # inicializa a janela principal do CustomTkinter
 
         # ---------- CONFIGURAÇÕES DA JANELA ----------
-        self.title("Cotações de Criptomoedas")   # Título da janela
-        self.geometry("500x400")                 # Tamanho inicial
-        self.configure(fg_color="#FFFFFF")     # Cor de fundo branca
-        self.resizable(True, True)               # Permite redimensionar a janela
+        self.title("As melhores criptos para investir")   # título da janela
+        self.geometry("500x400")                 # tamanho inicial
+        self.configure(fg_color="#FFFFFF")     # cor de fundo branca
+        self.resizable(True, True)               # permite redimensionar a janela
 
         # Define transparência da janela (caso o sistema suporte)
         try:
             self.attributes("-alpha", 0.92)
         except Exception:
-            pass  # Evita erro se o SO não suportar essa flag
+            pass  # evita erro se o SO não suportar essa flag
 
         # Lista usada para guardar widgets que exibem as linhas da tabela
         # (permite apagar e recriar os dados a cada atualização)

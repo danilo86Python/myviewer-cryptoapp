@@ -1,4 +1,4 @@
-import requests   # Biblioteca usada para fazer requisições HTTP
+import requests   # biblioteca usada para fazer requisições HTTP
 
 # Função responsável por buscar os dados da API pública da CoinGecko
 def get_crypto_data():
@@ -11,8 +11,8 @@ def get_crypto_data():
 
     # Parâmetros enviados à API
     params = {
-        "ids": ",".join(ids),        # Lista de moedas separadas por vírgula
-        "vs_currencies": "usd,brl",  # Moedas de comparação (USD e BRL)
+        "ids": ",".join(ids),        # lista de moedas separadas por vírgula
+        "vs_currencies": "usd,brl",  # moedas de comparação (USD e BRL)
     }
 
     try:
