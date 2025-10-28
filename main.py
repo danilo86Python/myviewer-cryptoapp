@@ -96,7 +96,7 @@ class App(ctk.CTk):
     # (Chama a API e atualiza a tabela)
     # -------------------------------------------------
     def update_prices(self):
-        # 1️⃣ Limpa todas as linhas antigas
+        # Limpa todas as linhas antigas
         for w in self.table_rows:
             try:
                 w.destroy()
@@ -104,7 +104,7 @@ class App(ctk.CTk):
                 pass
         self.table_rows.clear()
 
-        # 2️⃣ Faz a chamada à API (função externa em crypto_api.py)
+        # Faz a chamada à API (função externa em crypto_api.py)
         data = get_crypto_data()
 
         # Se a resposta for vazia ou houver erro na API
@@ -114,7 +114,7 @@ class App(ctk.CTk):
             self.after(30000, self.update_prices)
             return
 
-        # 3️⃣ Preenche a "tabela" com os dados recebidos
+        # Preenche a "tabela" com os dados recebidos
         row = 1
         data_font = ctk.CTkFont(family="Consolas", size=13)
         for coin_id in ORDER:  # Mantém a ordem definida no topo
@@ -143,11 +143,11 @@ class App(ctk.CTk):
             self.table_rows.extend([lbl_name, lbl_usd, lbl_brl])
             row += 1
 
-        # 4️⃣ Atualiza o horário da última atualização
+        # Atualiza o horário da última atualização
         now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         self.last_update_label.configure(text=f"Última atualização: {now}")
 
-        # 5️⃣ Programa uma nova atualização automática a cada 30 segundos
+        # Programa uma nova atualização automática a cada 30 segundos
         self.after(30000, self.update_prices)
 
 # -------------------------------------------------
