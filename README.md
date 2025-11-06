@@ -14,7 +14,7 @@
 
 ## 🪙 Sobre o projeto  
 
-O **Aquaa Crypto Viewer** é um aplicativo minimalista desenvolvido em **Python** com **CustomTkinter**, que exibe os preços atualizados das principais criptomoedas mais populares no mercado brasileiro.  
+O **MyViewer CryptoApp** é um aplicação minimalista desenvolvido em **Python** com **CustomTkinter**, que exibe os preços atualizados das principais criptomoedas mais populares no mercado brasileiro.  
 
 A aplicação consome dados diretamente da **CoinGecko API**, garantindo informações **precisas e em tempo real** sobre moedas como **Bitcoin, Ethereum, Solana, Binance Coin**, entre outras.  
 
