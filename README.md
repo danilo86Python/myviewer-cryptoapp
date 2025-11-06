@@ -103,13 +103,6 @@ Para criar um executável independente (sem precisar do Python instalado):
 
 ---
 
-## 🪄 Exemplo visual  
-
-*(adicione aqui uma imagem da interface do app)*  
-> _Exemplo: tela principal mostrando preços atualizados das criptomoedas._
-
----
-
 ## 🔗 API utilizada  
 
 Os dados são fornecidos gratuitamente pela **[CoinGecko API](https://www.coingecko.com/en/api)**.  
