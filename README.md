@@ -16,7 +16,7 @@
 
 O **Aquaa Crypto Viewer** é um aplicativo minimalista desenvolvido em **Python** com **CustomTkinter**, que exibe os preços atualizados das principais criptomoedas mais populares no mercado brasileiro.  
 
-A aplicação consome dados diretamente da **CoinGecko API**, garantindo informações **precisas e em tempo real** sobre moedas como **XRP, XLM, HBAR**, entre outras.  
+A aplicação consome dados diretamente da **CoinGecko API**, garantindo informações **precisas e em tempo real** sobre moedas como **Bitcoin, Ethereum, Solana, Binance Coin**, entre outras.  
 
 ---
 
@@ -38,6 +38,21 @@ A aplicação consome dados diretamente da **CoinGecko API**, garantindo informa
 | 🎨 **CustomTkinter** | Interface gráfica moderna |
 | 🌐 **CoinGecko API** | Dados de preços em tempo real |
 | 📦 **PyInstaller** | Criação do executável (.exe) |
+
+---
+
+## 📂 Estrutura do projeto  
+
+```
+myviewer-cryptoapp/
+│
+├── assets/              # Arquivos de ícones e imagens
+├── dist/                # Executável gerado pela aplicação
+├── crypto_api.py        # Código responsável pela integração com a API
+├── main.py              # Código principal da interface do app
+├── requirements.txt     # Dependências Python do projeto
+└── README.md            # Documentação do aplicativo
+```
 
 ---
 
@@ -88,6 +103,13 @@ Para criar um executável independente (sem precisar do Python instalado):
 
 ---
 
+## 🪄 Exemplo visual  
+
+*(adicione aqui uma imagem da interface do app)*  
+> _Exemplo: tela principal mostrando preços atualizados das criptomoedas._
+
+---
+
 ## 🔗 API utilizada  
 
 Os dados são fornecidos gratuitamente pela **[CoinGecko API](https://www.coingecko.com/en/api)**.  
@@ -97,10 +119,10 @@ Nenhuma chave de API é necessária.
 
 ## 🧑‍💻 Autor  
 
-**Danilo Santos**  
-Desenvolvedor Python | Automação, interfaces modernas e integração com APIs  
+**Danilo Santos**    
 
-[🔗 GitHub](https://github.com/danilo86Python)
+🔗 **Repositório do projeto:** [myviewer-cryptoapp](https://github.com/danilo86Python/myviewer-cryptoapp)  
+👤 **Perfil GitHub:** [@danilo86Python](https://github.com/danilo86Python)
 
 ---
 
