@@ -1,4 +1,4 @@
-# 💠 Aquaa Crypto Viewer  
+# 💠 MyViewer CryptoApp  
 
 ![Python](https://img.shields.io/badge/Python-3.11%2B-blue?logo=python&logoColor=white)
 ![CustomTkinter](https://img.shields.io/badge/UI-CustomTkinter-1abc9c?logo=python&logoColor=white)
